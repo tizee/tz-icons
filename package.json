@@ -5,8 +5,8 @@
   "author": "tizee",
   "license": "MIT",
   "scripts": {
-    "check": "tsc --noEmit",
-    "check:watch": "tsc --noEmit --watch",
+    "ts-check": "tsc --noEmit",
+    "ts-check:watch": "tsc --noEmit --watch",
     "build:types": "tsc --emitDeclarationOnly"
   },
   "devDependencies": {
