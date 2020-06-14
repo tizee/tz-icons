@@ -6,9 +6,12 @@
         "module": "CommonJS", // Specify module code generation: 'None', 'CommonJS', 'AMD', 'System', 'UMD', 'ES6', 'ES2015', 'ES2020' or 'ESNext'. Only 'AMD' and 'System' can be used in conjunction with --outFile.
         "rootDir": "src", // Specifies the root directory of input files
         "outDir": "build", // Redirect output structure to the directory.
-        "declaration": true, // Generates corresponding .d.ts file.
+        "declaration": false, // Generates corresponding .d.ts file.
+        "noEmit": true, // Do not emit declaration files.
+        "isolatedModules": true, // Disallow features that require cross-file information for emit.
         "removeComments": true, // Remove all comments except copy-right header comments beginning with /*!
-        "lib": ["es6", "es7", "esnext"], // List of library files to be included in the compilation
+        "esModuleInterop": true, // Emit '__importStar' and '__importDefault' helpers for runtime babel ecosystem compatibility and enable '--allowSyntheticDefaultImports' for typesystem compatibility.
+        "lib": ["es6", "es7", "esnext", "dom"], // List of library files to be included in the compilation
         "sourceMap": true, // Generates corresponding .map file.
         "allowJs": true, // Allow javascript files to be compiled.
         /* Type checking Options */
