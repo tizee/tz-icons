@@ -1,7 +1,7 @@
 {
-  "name": "ts-rollup-boilerplate",
-  "version": "0.0.2",
-  "description": "A simple Typescript bolierplate with baisc rollup configuration",
+  "name": "tz-icons",
+  "version": "0.0.1",
+  "description": "a React icon library",
   "author": "tizee",
   "license": "MIT",
   "scripts": {
@@ -10,10 +10,6 @@
     "build": "npx rollup -c",
     "dev": "npx rollup -c -w"
   },
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
-  "browser": "dist/bundle.umd.js",
-  "types": "dist/types/index.d.ts",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
